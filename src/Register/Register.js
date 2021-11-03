@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import register from '../services/userService';
+import './Register.scss';
 
 function Register() {
     const history = useHistory();
@@ -17,10 +18,10 @@ function Register() {
     }
 
     return (
-        <form onSubmit={submit}>
-            <label htmlFor="name">Name:</label>
-            <input type="text" value={name} id="name" onChange={e => setName(e.target.value)} autoComplete="off" />
-            <input type="submit" value="Sign Up" />
+        <form onSubmit={submit} className='Register'>
+            <label htmlFor="name" className='registerInput'>Name: </label>
+            <input type="text" value={name} id="name" className='registerInput' onChange={e => setName(e.target.value)} autoComplete="off" />
+            <input type="submit" value="Sign Up" className='registerInput' />
         </form>
     );
 }

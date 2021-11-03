@@ -1,0 +1,16 @@
+.Feed {
+    // border: 1px solid grey;
+    padding: 15px;
+    width: 60%; 
+    max-height: 500px;
+    margin: 5px; 
+    max-width: 400px;
+}
+
+.Feed__posts_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+}
+
