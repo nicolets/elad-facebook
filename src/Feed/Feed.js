@@ -1,10 +1,11 @@
 import React from 'react';
 import './Feed.scss';
+import '../services/postService';
 
-function Feed(props) {
+function Feed() {
     return (
-        <div>
-            hi
+        <div className="Feed">
+
         </div>
     );
 }
