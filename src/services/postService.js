@@ -17,3 +17,8 @@ async function createPost({ name, message }) {
     })
     return res.json();
 }
+
+module.exports = {
+    createPost,
+    getPosts
+}
