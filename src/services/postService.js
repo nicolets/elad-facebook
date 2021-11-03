@@ -8,7 +8,6 @@ async function getPosts() {
 }
 
 async function createPost({ name, postMessage }) {
-    console.log(name, postMessage)
     const res = await fetch(config.apiUrl + '/post', {
         method: 'POST',
         body: JSON.stringify({
@@ -22,5 +21,18 @@ async function createPost({ name, postMessage }) {
     return res.json();
 }
 
-export { createPost, getPosts };
+async function likePost(postId) {
+    const res = await fetch(config.apiUrl + '/like', {
+        method: 'POST',
+        body: JSON.stringify({
+            postId
+        }),
+        header: {
+            'Content-Type': 'application/json'
+        }
+    })
+    return res.json();
+}
+
+export { createPost, getPosts, likePost };
 

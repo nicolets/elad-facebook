@@ -27,7 +27,7 @@ function Feed() {
             </Link>
             <div className="Feed__posts_wrapper">
             {posts.map((post) => (
-                <Post key={post.id} date={post.time} name={post.name} message={post.message} />
+                <Post key={post.id} date={post.time} name={post.name} message={post.message} postId={post.id} />
             ))}
             </div>
         </div>

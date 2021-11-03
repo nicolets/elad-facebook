@@ -5,11 +5,13 @@ import { formatDistanceToNow } from 'date-fns';
 
 function PostDate({ date }) {
     const formattedDate = useMemo(() => {
-        return formatDistanceToNow(new Date(date), { addSuffix: true, includeSeconds: true });
+        return formatDistanceToNow(new Date(date), {
+            addSuffix: true
+        });
     }, [date])
 
     return (
-        <div>{formattedDate}</div>
+        <span>{formattedDate}</span>
     );
 }
 
