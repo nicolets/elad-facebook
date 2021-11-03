@@ -20,9 +20,13 @@ function Feed() {
 
     return (
         <div className="Feed">
-            {posts.map((post) => {
-                return post 
-            })}
+            {posts.map((post) => (
+                <div key={post.id}>
+                    <div>{post.name}</div>
+                    <div>{post.message}</div>
+                    <div>{post.time}</div>
+                </div>
+            ))}
         </div>
     );
 }
