@@ -15,9 +15,11 @@ function Post({ postId, name, date, message }) {
 
     return (
         <div className="Post">
+            <div className='Post__Header'>
+                <strong>{name}<span className="Post__Name_Suffix"> said:</span></strong>
+                <PostDate date={date} />
+            </div>
             <hr />
-            <strong>{name}</strong>
-            <PostDate date={date} />
             <p>{message}</p>
             <button onClick={like}>Like</button>
         </div>
