@@ -1,9 +1,5 @@
 import config from '../config/index';
 
-async function init() {
-    
-}
-
 async function getPosts() {
     const res = await fetch(config.apiUrl + '/posts', {
         method: 'GET',
@@ -25,5 +21,5 @@ async function createPost({ name, postMessage }) {
     return res.json();
 }
 
-export { createPost, getPosts, init };
+export { createPost, getPosts };
 
