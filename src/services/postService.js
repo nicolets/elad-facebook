@@ -1,5 +1,9 @@
 import config from '../config/index';
 
+async function init() {
+    
+}
+
 async function getPosts() {
     const res = await fetch(config.apiUrl + '/posts', {
         method: 'GET',
@@ -7,18 +11,19 @@ async function getPosts() {
     return res.json();
 }
 
-async function createPost({ name, message }) {
-    const res = await fetch(config.apiUrl + '/create', {
+async function createPost({ name, postMessage }) {
+    console.log(name, postMessage)
+    const res = await fetch(config.apiUrl + '/post', {
         method: 'POST',
         body: {
-            name,
-            message
+            message: postMessage
+        },
+        headers: {
+            'Content-Type': 'application/json'
         }
     })
     return res.json();
 }
 
-module.exports = {
-    createPost,
-    getPosts
-}
+export { createPost, getPosts, init };
+
