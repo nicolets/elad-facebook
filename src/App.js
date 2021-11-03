@@ -1,12 +1,13 @@
+import React from "react";
 import Feed from './Feed/Feed';
 import './App.css';
 import PostCreate from './PostCreate/PostCreate';
-import React from "react";
+import Register from './Register/Register';
+
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
           <Route path="/post/create">
             <PostCreate />
           </Route>
+           <Route path="/register">
+               <Register />
+           </Route>
           <Route path="/">
             <Feed />
           </Route>

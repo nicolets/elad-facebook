@@ -4,7 +4,7 @@ import { createPost } from '../services/postService';
 
 function PostCreate(props) {
 
-    const [name, setName] = useState('nicole');
+    const [name] = useState('nicole');
     const [postMessage, setPostMessage] = useState('');
 
     async function submit(e) {
