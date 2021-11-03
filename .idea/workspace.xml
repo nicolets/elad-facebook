@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7565e37d-930a-4dc4-aa77-e5efeefec37e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Feed/Post/Post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Feed/Post/Post.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Feed/Post/PostDate/PostDate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Feed/Post/PostDate/PostDate.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Feed/Feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Feed/Feed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PostCreate/PostCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PostCreate/PostCreate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Register/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Register/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Feed/Post/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Feed/Post/Post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Feed/Post/PostDate/PostDate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Feed/Post/PostDate/PostDate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/postService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/postService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/userService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635956737674</updated>
       <workItem from="1635956741430" duration="1491000" />
-      <workItem from="1635963915453" duration="6077000" />
+      <workItem from="1635963915453" duration="7373000" />
     </task>
     <servers />
   </component>
