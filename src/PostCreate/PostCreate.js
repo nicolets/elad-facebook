@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import './PostCreate.scss';
 import { createPost } from '../services/postService';
+import { useHistory } from 'react-router-dom';
 
 function PostCreate(props) {
-
+    const history = useHistory();
     const [name] = useState('nicole');
     const [postMessage, setPostMessage] = useState('');
 
     async function submit(e) {
         e.preventDefault();
-        const res = await createPost({name, postMessage});
-        console.log(res);
-        console.log(postMessage)
+        await createPost({name, postMessage})
+            .then(() => history.push('/feed'))
     }
 
     return (

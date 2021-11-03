@@ -7,23 +7,27 @@ import Register from './Register/Register';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Router>
+          <Link to='/register'>
+              Register Now!
+          </Link>
        <Switch>
-          <Route path="/post/create">
-            <PostCreate />
+          <Route path="/feed">
+            <Feed />
           </Route>
+           <Route path="/post/create">
+               <PostCreate />
+           </Route>
            <Route path="/register">
                <Register />
            </Route>
-          <Route path="/">
-            <Feed />
-          </Route>
         </Switch>
       </Router> 
     </div>

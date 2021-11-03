@@ -1,12 +1,12 @@
 import config from '../config/index';
 
-export default async function register({ name }) {
+export default async function register(name) {
     const res = await fetch(config.apiUrl + '/register', {
         method: 'POST',
-        body: JSON.stringify({ name }),
+        body: JSON.stringify(name),
         headers: {
             'Content-Type': 'application/json'
         }
     })
-    return res.json();
+    return res.text();
 }

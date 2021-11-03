@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './Feed.scss';
 import { getPosts } from '../services/postService';
+import { Link } from 'react-router-dom'
+import Post from './Post/Post';
 
 function Feed() {
 
@@ -20,13 +22,14 @@ function Feed() {
 
     return (
         <div className="Feed">
+            <Link to='/post/create'>
+                Create a new post
+            </Link>
+            <div className="Feed__posts_wrapper">
             {posts.map((post) => (
-                <div key={post.id}>
-                    <div>{post.name}</div>
-                    <div>{post.message}</div>
-                    <div>{post.time}</div>
-                </div>
+                <Post key={post.id} date={post.time} name={post.name} message={post.message} />
             ))}
+            </div>
         </div>
     );
 }

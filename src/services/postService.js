@@ -11,9 +11,10 @@ async function createPost({ name, postMessage }) {
     console.log(name, postMessage)
     const res = await fetch(config.apiUrl + '/post', {
         method: 'POST',
-        body: {
+        body: JSON.stringify({
+            name,
             message: postMessage
-        },
+        }),
         headers: {
             'Content-Type': 'application/json'
         }
